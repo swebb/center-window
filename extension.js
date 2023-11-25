@@ -36,12 +36,20 @@ export default class CenterWindow extends Extension {
   }
 
   _center() {
-    let win = global.display.focus_window;
+    const win = global.display.get_focus_window();
     if (win == null) {
       return false;
     }
 
+    const displaySize = win.get_display().get_size();
+    const percentage = 0.6
+    const x = (displaySize[0] * (1-0.6)) / 2;
+    const y = 0
+    const width = displaySize[0] * 0.6;
+    const height = displaySize[1];
+
     win.unmaximize(Meta.MaximizeFlags.BOTH);
-    win.move_resize_frame(false, 640, 0, 1280, 1920);
+    win.move_resize_frame(false, x, 0, width, displaySize[1]);
+    //win.maximize(Meta.MaximizeFlags.VERTICAL);
   }
 }
