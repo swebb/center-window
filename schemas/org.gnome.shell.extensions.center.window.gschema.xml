@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.centerwindow" path="/org/gnome/shell/extensions/centerwindow/">
+      <key name="center-window-hotkey" type="as">
+          <default><![CDATA[['<Alt>J']]]></default>
+          <summary>Hotkey to center the active window.</summary>
+      </key>
+  </schema>
+</schemalist>

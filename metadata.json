@@ -1,0 +1,9 @@
+{
+  "name": "Center Window",
+  "description": "Center a window horizontally in the middle 50% of the screen.",
+  "uuid": "center.window@steven.daniel.webb.gmail.com",
+  "settings-schema": "org.gnome.shell.extensions.centerwindow",
+  "shell-version": [
+    "45"
+  ]
+}
